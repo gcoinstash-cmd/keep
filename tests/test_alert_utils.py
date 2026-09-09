@@ -17,6 +17,10 @@ from keep.api.utils.alert_utils import sanitize_alert
             {"nested": {"bool": True, "number": 1234}},
             {"nested": {"bool": True, "number": 1234}},
         ),
+        (
+            {"meta": {"score": 98.75, "raw_tag": "tag\x00_name", "optional": None}},
+            {"meta": {"score": 98.75, "raw_tag": "tag_name", "optional": None}},
+        ),
         (None, None),
     ],
 )
